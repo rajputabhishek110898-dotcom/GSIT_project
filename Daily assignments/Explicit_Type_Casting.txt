@@ -1,0 +1,12 @@
+package day1;
+
+public class ExplicitCasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double marks=10.75;
+int converted1=(int)marks;
+
+System.out.println("Marks:"+" "+marks+"\n"+"Converted:"+" "+converted1);
+	}
+}

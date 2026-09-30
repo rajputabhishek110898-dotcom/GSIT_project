@@ -1,0 +1,25 @@
+package day1;
+
+public class Program_ASCII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+char big='A';
+int bet=big;
+
+char small='a';
+int bet1=small;
+
+char marks='0';
+int marked=marks;
+
+char special='@';
+int specialized=special;
+
+System.out.println("ASCII value of A"+" "+"="+" "+bet);
+System.out.println("ASCII value of a"+" "+"="+" "+bet1);
+System.out.println("ASCII value of 0"+" "+"="+" "+marked);
+System.out.println("ASCII value of @"+" "+"="+" "+specialized);
+	}
+
+}
