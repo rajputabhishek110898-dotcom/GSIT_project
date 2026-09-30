@@ -1,0 +1,11 @@
+class Assignment2 {
+
+	public static void main(String[] args) {
+
+double prodPrice=499.50;
+int quant=3;
+double totalPrice=prodPrice*quant;
+System.out.println("Total Price:"+" "+totalPrice);
+	}
+
+}

@@ -1,0 +1,17 @@
+Class Assignment1
+{
+public static void main(String args[])
+{
+short empID=1001;
+int age=28;
+float sal=55000.50;
+char depart='T';
+Boolean perm=True;
+
+System.out.println("Employee ID:"+" "+empID);
+System.out.println("Age:"+" "+age);
+System.out.println("Salary:"+" "+sal);
+System.out.println("Department:"+" "+depart);
+System.out.println("Permanent:"+" "+perm);
+}
+}
