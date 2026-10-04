@@ -1,0 +1,19 @@
+package day2;
+
+public class Program_Armstrong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=153; int check=num; int rev; int s=0;
+while (check>0)
+{
+	rev=check%10;
+    s=s+(rev*rev*rev);
+	check=check/10;
+	}
+if (s==num)
+System.out.println(num+" is an Armstrong number");
+else
+	System.out.println(num+" is not an Armstrong number");
+}
+}

@@ -1,0 +1,21 @@
+package day2;
+
+public class Program_Palindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int r; int num=1221; int whole=num; int s=0;
+
+		while (whole>0)
+		{
+			r=whole%10;
+			s=(s*10)+r;
+			whole=whole/10;
+		}
+		if (s==num)
+		System.out.println(num+" is a palindrome");
+		else
+			System.out.println(num+" is not a palindrome");
+	}
+
+}
