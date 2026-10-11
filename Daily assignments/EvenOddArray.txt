@@ -1,0 +1,20 @@
+package day5;
+
+public class Program_EvenOddArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[]arr= {11, 24, 35, 42, 56, 67, 80, 93};
+int sum=0; int counter=0;
+for (int i=0; i<arr.length; i++)
+{
+	if (arr[i]%2==0)
+		sum++;
+	else
+		counter++;
+}
+System.out.println("Even numbers:"+" "+sum);
+System.out.println("Odd numbers:"+" "+counter);
+	}
+
+}

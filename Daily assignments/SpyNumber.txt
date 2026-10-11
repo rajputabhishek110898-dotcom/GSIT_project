@@ -1,0 +1,20 @@
+package day2;
+
+public class Program_SpyNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=1124; int check=num; int rem; int sum=0; int prod=1;
+while (check>0)
+{
+	rem=check%10;
+	sum=sum+rem;
+	prod=prod*rem;
+	check=check/10;
+}
+if (sum==prod)
+	System.out.println(num+" is a Spy Number");
+else
+	System.out.println(num+" is not a Spy Number");
+	}
+}
