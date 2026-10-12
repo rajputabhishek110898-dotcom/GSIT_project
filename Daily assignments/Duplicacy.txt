@@ -4,18 +4,37 @@ public class Program_Duplicacy {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[]arr= {10, 20, 30, 20, 40, 10, 50, 30, 60};
-		System.out.println("Duplicate elements:");
-		for (int i=0; i<arr.length; i++)
+		int[]arr= {10, 20, 30, 20, 10, 40, 10, 10, 10, 50, 30, 60};
+		int duplicate[]=new int[arr.length];
+        int index=0; int check=0;
+		for (int i=0; i<arr.length-1; i++)
 		{
-			for (int dup=(i+1); dup<arr.length; dup++)
+			for (int j=(i+1); j<arr.length; j++)
 			{
-			if (arr[i]==arr[dup])
+			if (arr[i]==arr[j])
 			{
-            System.out.print(arr[i]+" ");
-			break;
+				for (int k=0; k<duplicate.length; k++)
+				{
+					if (duplicate[k]==arr[i])
+					{
+						check=1;
+						break;
+					}
+				}
+				if(check==0)
+				{
+					duplicate[index]=arr[i];
+					index++;
+				}
+				check=0;
 			}
-			}	
-	}
+			}
+		}
+		System.out.print("Duplicate elements:"+" ");
+		for (int i=0; i<duplicate.length; i++)
+		{
+			if (duplicate[i]!=0)
+				System.out.print(duplicate[i]+" ");
+			}
 	}
 }
